@@ -1,0 +1,20 @@
+{
+  "name": "memsql",
+  "version": "0.0.1",
+  "description": "纯内存操作的关系型数据库管理系统",
+  "keywords": [ "sql", "memery"],
+  "author": "jifeng (wade428@163.com)",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "node-query": "0.3.2"
+  },
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*",
+    "jscover": "*"
+  },
+  "main": "index.js",
+  "engines": { "node": "0.8.x" }
+}
