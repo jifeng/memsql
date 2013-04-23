@@ -1,16 +1,5 @@
-# memsql
+var Memsql = require('../');
 
-纯内存操作的关系型数据库管理系统
-
-## 安装
-
-````
-npm install memsql
-````
-
-## 例子
-
-```js
 var memsql = new Memsql({
   tables: {
     document: {
@@ -44,4 +33,3 @@ memsql.query(sql4, function (err) {
     });
   });
 });
-```
