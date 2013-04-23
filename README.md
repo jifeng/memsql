@@ -44,4 +44,13 @@ memsql.query(sql4, function (err) {
     });
   });
 });
+
+var sql7 = 'INSERT INTO document(name, detail, status) VALUES ("key2", "value2", 1)';
+var sql8 = 'SELECT * FROM document WHERE name = :key';
+
+memsql.query(sql7, function (err) {
+  memsql.query({sql: sql8, params: {key: 'key2'}}, function (err, rows) {
+    console.log(rows);
+  });
+});
 ```
